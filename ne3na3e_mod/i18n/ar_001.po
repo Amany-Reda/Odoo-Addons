@@ -1,0 +1,349 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* ne3na3e_mod
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-12 12:04+0000\n"
+"PO-Revision-Date: 2024-08-12 12:04+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: ne3na3e_mod
+#: model_terms:ir.ui.view,arch_db:ne3na3e_mod.official_invoice
+msgid ""
+"<span "
+"groups=\"account.group_show_line_subtotals_tax_excluded\">الإجمالي</span>"
+msgstr ""
+
+#. module: ne3na3e_mod
+#: model_terms:ir.ui.view,arch_db:ne3na3e_mod.official_invoice
+msgid "<span>إسم المنتج</span>"
+msgstr ""
+
+#. module: ne3na3e_mod
+#: model_terms:ir.ui.view,arch_db:ne3na3e_mod.official_invoice
+msgid "<span>الكميه</span>"
+msgstr ""
+
+#. module: ne3na3e_mod
+#: model_terms:ir.ui.view,arch_db:ne3na3e_mod.official_invoice
+msgid "<span>س.الوحده</span>"
+msgstr ""
+
+#. module: ne3na3e_mod
+#: model_terms:ir.ui.view,arch_db:ne3na3e_mod.official_invoice
+msgid "<span>م</span>"
+msgstr ""
+
+#. module: ne3na3e_mod
+#: model_terms:ir.ui.view,arch_db:ne3na3e_mod.official_invoice
+msgid "<strong class=\"mr16\">Subtotal</strong>"
+msgstr ""
+
+#. module: ne3na3e_mod
+#: model_terms:ir.ui.view,arch_db:ne3na3e_mod.official_invoice
+msgid "<strong>إجمالي الفاتوره</strong>"
+msgstr ""
+
+#. module: ne3na3e_mod
+#: model_terms:ir.ui.view,arch_db:ne3na3e_mod.official_invoice
+msgid "<strong>التاريخ:</strong>"
+msgstr ""
+
+#. module: ne3na3e_mod
+#: model_terms:ir.ui.view,arch_db:ne3na3e_mod.official_invoice
+msgid "<strong>العميل/</strong>"
+msgstr ""
+
+#. module: ne3na3e_mod
+#: model_terms:ir.ui.view,arch_db:ne3na3e_mod.official_invoice
+msgid "<strong>العنوان/</strong>"
+msgstr ""
+
+#. module: ne3na3e_mod
+#: model_terms:ir.ui.view,arch_db:ne3na3e_mod.official_invoice
+msgid "<strong>المندوب/</strong>"
+msgstr ""
+
+#. module: ne3na3e_mod
+#: model_terms:ir.ui.view,arch_db:ne3na3e_mod.official_invoice
+msgid "<strong>تاريخ إستلام</strong>"
+msgstr ""
+
+#. module: ne3na3e_mod
+#: model_terms:ir.ui.view,arch_db:ne3na3e_mod.official_invoice
+msgid "<strong>تاريخ الدفع:  </strong>"
+msgstr ""
+
+#. module: ne3na3e_mod
+#: model_terms:ir.ui.view,arch_db:ne3na3e_mod.official_invoice
+msgid "<strong>تاريخ الفاتوره</strong>"
+msgstr ""
+
+#. module: ne3na3e_mod
+#: model_terms:ir.ui.view,arch_db:ne3na3e_mod.official_invoice
+msgid "<strong>تاريخ مذكرة الإئتمان</strong>"
+msgstr ""
+
+#. module: ne3na3e_mod
+#: model_terms:ir.ui.view,arch_db:ne3na3e_mod.official_invoice
+msgid "<strong>طريقة الدفع:  </strong>"
+msgstr ""
+
+#. module: ne3na3e_mod
+#: model_terms:ir.ui.view,arch_db:ne3na3e_mod.official_invoice
+msgid "<strong>هاتف العميل/</strong>"
+msgstr ""
+
+#. module: ne3na3e_mod
+#: model_terms:ir.ui.view,arch_db:ne3na3e_mod.official_invoice
+msgid "<strong>هاتف المندوب/</strong>"
+msgstr ""
+
+#. module: ne3na3e_mod
+#: model:ir.model,name:ne3na3e_mod.model_account_aged_trial_balance
+msgid "Account Aged Trial balance Report"
+msgstr "تقرير ميزان المراجعة المسن في الحساب"
+
+#. module: ne3na3e_mod
+#: model:ir.model,name:ne3na3e_mod.model_account_common_report
+msgid "Account Common Report"
+msgstr ""
+
+#. module: ne3na3e_mod
+#: model_terms:ir.ui.view,arch_db:ne3na3e_mod.partner_aged
+msgid "Account Total"
+msgstr "الإجمالي"
+
+#. module: ne3na3e_mod
+#: model:ir.actions.report,name:ne3na3e_mod.action_report_partner_aged
+#: model_terms:ir.ui.view,arch_db:ne3na3e_mod.partner_aged
+msgid "Aged Partner"
+msgstr "أرصدة الجهات"
+
+#. module: ne3na3e_mod
+#: model:ir.model.fields,field_description:ne3na3e_mod.field_account_bank_statement_line__number_to_words
+#: model:ir.model.fields,field_description:ne3na3e_mod.field_account_move__number_to_words
+#: model:ir.model.fields,field_description:ne3na3e_mod.field_account_payment__number_to_words
+msgid "Amount in Words (Total) : "
+msgstr ""
+
+#. module: ne3na3e_mod
+#: model_terms:ir.ui.view,arch_db:ne3na3e_mod.view_account_payment_search_inherit
+msgid "Check Due Date"
+msgstr "تاريخ استحقاق الشيك"
+
+#. module: ne3na3e_mod
+#: model:ir.model.fields,field_description:ne3na3e_mod.field_account_payment__check
+msgid "Check Number"
+msgstr "رقم الشيك"
+
+#. module: ne3na3e_mod
+#: model:ir.model.fields,field_description:ne3na3e_mod.field_account_payment__check_value
+msgid "Check Value"
+msgstr "قيمة الشيك"
+
+#. module: ne3na3e_mod
+#: model:ir.model.fields,field_description:ne3na3e_mod.field_account_payment__currency_id
+msgid "Currency"
+msgstr "العملة"
+
+#. module: ne3na3e_mod
+#: model:ir.model.fields,field_description:ne3na3e_mod.field_account_payment__check_due_date
+msgid "Due Date"
+msgstr "تاريخ الاستحقاق"
+
+#. module: ne3na3e_mod
+#. odoo-python
+#: code:addons/ne3na3e_mod/report/partner_aged_report.py:0
+#, python-format
+msgid "Form content is missing, this report cannot be printed."
+msgstr ""
+
+#. module: ne3na3e_mod
+#: model:ir.model,name:ne3na3e_mod.model_account_move
+msgid "Journal Entry"
+msgstr "قيد اليومية"
+
+#. module: ne3na3e_mod
+#: model:ir.model,name:ne3na3e_mod.model_account_move_line
+msgid "Journal Item"
+msgstr "بنود اليومية "
+
+#. module: ne3na3e_mod
+#: model_terms:ir.ui.view,arch_db:ne3na3e_mod.official_invoice
+msgid "Logo"
+msgstr ""
+
+#. module: ne3na3e_mod
+#: model_terms:ir.ui.view,arch_db:ne3na3e_mod.view_account_move_line_filter_inherited
+msgid "Partner Phone"
+msgstr "الموبايل"
+
+#. module: ne3na3e_mod
+#: model_terms:ir.ui.view,arch_db:ne3na3e_mod.partner_aged
+msgid "Partners"
+msgstr "الجهات"
+
+#. module: ne3na3e_mod
+#: model_terms:ir.ui.view,arch_db:ne3na3e_mod.partner_aged
+msgid "Payable Accounts"
+msgstr "ديون"
+
+#. module: ne3na3e_mod
+#: model:ir.model,name:ne3na3e_mod.model_account_payment
+msgid "Payments"
+msgstr "الدفعات"
+
+#. module: ne3na3e_mod
+#: model:ir.model.fields,field_description:ne3na3e_mod.field_account_move_line__partner_phone
+msgid "Phone"
+msgstr "رقم الهاتف"
+
+#. module: ne3na3e_mod
+#: model_terms:ir.ui.view,arch_db:ne3na3e_mod.partner_aged
+msgid "Phone Number"
+msgstr "رقم الهاتف"
+
+#. module: ne3na3e_mod
+#: model:ir.model.fields,field_description:ne3na3e_mod.field_account_move_line__price_unit
+msgid "Price Unit"
+msgstr "سعر الوحده"
+
+#. module: ne3na3e_mod
+#: model_terms:ir.ui.view,arch_db:ne3na3e_mod.account_aged_balance_view_inherit
+msgid "Print Without Details"
+msgstr "طباعه بدون تفاصيل"
+
+#. module: ne3na3e_mod
+#: model:ir.model.fields,field_description:ne3na3e_mod.field_account_move_line__quantity
+msgid "Quantity"
+msgstr "الكمية"
+
+#. module: ne3na3e_mod
+#: model_terms:ir.ui.view,arch_db:ne3na3e_mod.partner_aged
+msgid "Receivable Accounts"
+msgstr "مديونيات"
+
+#. module: ne3na3e_mod
+#: model_terms:ir.ui.view,arch_db:ne3na3e_mod.partner_aged
+msgid "Receivable and Payable Accounts"
+msgstr "مديونيات وديون"
+
+#. module: ne3na3e_mod
+#: model:ir.model.fields,field_description:ne3na3e_mod.field_account_move_line__sales_person
+#: model_terms:ir.ui.view,arch_db:ne3na3e_mod.partner_aged
+#: model_terms:ir.ui.view,arch_db:ne3na3e_mod.view_account_move_line_filter_inherited
+msgid "Sales Person"
+msgstr "المندوب"
+
+#. module: ne3na3e_mod
+#: model:ir.model.fields,help:ne3na3e_mod.field_account_move_line__quantity
+msgid ""
+"The optional quantity expressed by this line, eg: number of product sold. "
+"The quantity is not a legal requirement but is very useful for some reports."
+msgstr ""
+"الكمية الاختيارية المُعبر عنها في هذا البند، مثال: عدد المنتجات المُباعة. "
+"الكمية ليست مطلبًا قانونيًا، ولكنها مفيدة للغاية لبعض التقارير. "
+
+#. module: ne3na3e_mod
+#: model:ir.model.fields,help:ne3na3e_mod.field_account_payment__currency_id
+msgid "The payment's currency."
+msgstr "عملة الدفع. "
+
+#. module: ne3na3e_mod
+#: model:ir.model.fields,help:ne3na3e_mod.field_account_bank_statement_line__number_to_words
+#: model:ir.model.fields,help:ne3na3e_mod.field_account_move__number_to_words
+#: model:ir.model.fields,help:ne3na3e_mod.field_account_payment__number_to_words
+msgid "To showing total amount in words"
+msgstr ""
+
+#. module: ne3na3e_mod
+#: model_terms:ir.ui.view,arch_db:ne3na3e_mod.partner_aged
+#: model_terms:ir.ui.view,arch_db:ne3na3e_mod.view_account_payment_tree_ne3na3e_inherit
+msgid "Total"
+msgstr "الاجمالي"
+
+#. module: ne3na3e_mod
+#. odoo-python
+#: code:addons/ne3na3e_mod/report/partner_aged_report.py:0
+#, python-format
+msgid "Unknown Partner"
+msgstr "جهه غير معروفه"
+
+#. module: ne3na3e_mod
+#: model:ir.model.fields,field_description:ne3na3e_mod.field_account_payment__to_verfiy
+msgid "Verfiy"
+msgstr "للتحقق"
+
+#. module: ne3na3e_mod
+#: model:ir.model,name:ne3na3e_mod.model_report_ne3na3e_mod_partner_aged
+msgid "report.ne3na3e_mod.partner_aged"
+msgstr ""
+
+#. module: ne3na3e_mod
+#: model_terms:ir.ui.view,arch_db:ne3na3e_mod.official_invoice
+msgid "إشعار دائن"
+msgstr ""
+
+#. module: ne3na3e_mod
+#: model_terms:ir.ui.view,arch_db:ne3na3e_mod.official_invoice
+msgid "اقر انا الموقع علي هذا بأنني استلمت البضاعه الموضحه بعد المعاينه"
+msgstr ""
+
+#. module: ne3na3e_mod
+#: model_terms:ir.ui.view,arch_db:ne3na3e_mod.official_invoice
+msgid "الاسم:"
+msgstr ""
+
+#. module: ne3na3e_mod
+#: model_terms:ir.ui.view,arch_db:ne3na3e_mod.official_invoice
+msgid "التوقيع:"
+msgstr ""
+
+#. module: ne3na3e_mod
+#: model_terms:ir.ui.view,arch_db:ne3na3e_mod.official_invoice
+msgid "طريقة الدفع: آجل"
+msgstr ""
+
+#. module: ne3na3e_mod
+#: model_terms:ir.ui.view,arch_db:ne3na3e_mod.official_invoice
+msgid "فاتورة المورد"
+msgstr ""
+
+#. module: ne3na3e_mod
+#: model:ir.actions.report,name:ne3na3e_mod.Ne3na3eInvoiceReport
+msgid "فاتورة نقطة البيع"
+msgstr ""
+
+#. module: ne3na3e_mod
+#: model_terms:ir.ui.view,arch_db:ne3na3e_mod.official_invoice
+msgid "فاتوره"
+msgstr ""
+
+#. module: ne3na3e_mod
+#: model_terms:ir.ui.view,arch_db:ne3na3e_mod.official_invoice
+msgid "فاتوره مسوده"
+msgstr ""
+
+#. module: ne3na3e_mod
+#: model_terms:ir.ui.view,arch_db:ne3na3e_mod.official_invoice
+msgid "فاتوره ملغاه"
+msgstr ""
+
+#. module: ne3na3e_mod
+#: model_terms:ir.ui.view,arch_db:ne3na3e_mod.official_invoice
+msgid "فقط لاغير"
+msgstr ""
+
+#. module: ne3na3e_mod
+#: model_terms:ir.ui.view,arch_db:ne3na3e_mod.official_invoice
+msgid "مذكرة إئتمان البائع"
+msgstr ""
