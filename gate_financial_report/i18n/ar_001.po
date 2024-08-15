@@ -1,0 +1,671 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* gate_financial_report
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-13 08:51+0000\n"
+"PO-Revision-Date: 2024-06-13 08:51+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: gate_financial_report
+#: model_terms:ir.ui.view,arch_db:gate_financial_report.partner_ledger
+msgid ": Partner Ledger"
+msgstr ""
+
+#. module: gate_financial_report
+#: model_terms:ir.ui.view,arch_db:gate_financial_report.partner_ledger
+msgid "<strong>Account Type:</strong>"
+msgstr ""
+
+#. module: gate_financial_report
+#: model_terms:ir.ui.view,arch_db:gate_financial_report.partner_ledger
+msgid "<strong>Accounts:</strong>"
+msgstr ""
+
+#. module: gate_financial_report
+#: model_terms:ir.ui.view,arch_db:gate_financial_report.partner_ledger
+msgid "<strong>From:</strong>"
+msgstr ""
+
+#. module: gate_financial_report
+#: model_terms:ir.ui.view,arch_db:gate_financial_report.partner_ledger
+msgid "<strong>Journals:</strong>"
+msgstr ""
+
+#. module: gate_financial_report
+#: model_terms:ir.ui.view,arch_db:gate_financial_report.partner_ledger
+msgid "<strong>Partner Tags:</strong>"
+msgstr ""
+
+#. module: gate_financial_report
+#: model_terms:ir.ui.view,arch_db:gate_financial_report.partner_ledger
+msgid "<strong>Partners:</strong>"
+msgstr ""
+
+#. module: gate_financial_report
+#: model_terms:ir.ui.view,arch_db:gate_financial_report.partner_ledger
+msgid "<strong>Target move:</strong>"
+msgstr ""
+
+#. module: gate_financial_report
+#: model_terms:ir.ui.view,arch_db:gate_financial_report.partner_ledger
+msgid "<strong>To:</strong>"
+msgstr ""
+
+#. module: gate_financial_report
+#. odoo-javascript
+#: code:addons/gate_financial_report/static/src/xml/partner_ledger_view.xml:0
+#: model_terms:ir.ui.view,arch_db:gate_financial_report.partner_ledger
+#, python-format
+msgid "Account"
+msgstr "الحساب"
+
+#. module: gate_financial_report
+#: model:ir.model.fields,field_description:gate_financial_report.field_account_partner_ledger__filter_hierarchy
+msgid "Account Groups"
+msgstr ""
+
+#. module: gate_financial_report
+#: model_terms:ir.ui.view,arch_db:gate_financial_report.view_account_financial_report_form
+msgid "Account Report"
+msgstr ""
+
+#. module: gate_financial_report
+#. odoo-javascript
+#: code:addons/gate_financial_report/static/src/xml/partner_ledger_view.xml:0
+#: model:ir.model.fields,field_description:gate_financial_report.field_account_partner_ledger__account_type
+#, python-format
+msgid "Account Type"
+msgstr "نوع الحساب"
+
+#. module: gate_financial_report
+#: model:ir.model.fields,field_description:gate_financial_report.field_account_partner_ledger__filter_account_type
+msgid "Account Types"
+msgstr ""
+
+#. module: gate_financial_report
+#: model:ir.model.fields,field_description:gate_financial_report.field_account_partner_ledger__account_ids
+msgid "Accounts"
+msgstr "حسابات"
+
+#. module: gate_financial_report
+#. odoo-javascript
+#: code:addons/gate_financial_report/static/src/xml/partner_ledger_view.xml:0
+#, python-format
+msgid "Accounts:"
+msgstr "حسابات:"
+
+#. module: gate_financial_report
+#. odoo-javascript
+#: code:addons/gate_financial_report/static/src/xml/partner_ledger_view.xml:0
+#: code:addons/gate_financial_report/static/src/xml/partner_ledger_view.xml:0
+#: code:addons/gate_financial_report/static/src/xml/partner_ledger_view.xml:0
+#: model:ir.model.fields.selection,name:gate_financial_report.selection__account_partner_ledger__account_type__all
+#: model:ir.model.fields.selection,name:gate_financial_report.selection__account_partner_ledger__display_account__all
+#: model:ir.model.fields.selection,name:gate_financial_report.selection__account_partner_ledger__reconciled__all
+#, python-format
+msgid "All"
+msgstr "الجميع"
+
+#. module: gate_financial_report
+#. odoo-javascript
+#: code:addons/gate_financial_report/static/src/xml/partner_ledger_view.xml:0
+#: model:ir.model.fields.selection,name:gate_financial_report.selection__account_partner_ledger__target_move__all
+#, python-format
+msgid "All Entries"
+msgstr "كل المقالات"
+
+#. module: gate_financial_report
+#: model:ir.model.fields.selection,name:gate_financial_report.selection__account_partner_ledger__target_move__posted
+msgid "All Posted Entries"
+msgstr ""
+
+#. module: gate_financial_report
+#: model:ir.model.fields,field_description:gate_financial_report.field_account_partner_ledger__filter_analytic
+msgid "Analytic Filter"
+msgstr ""
+
+#. module: gate_financial_report
+#. odoo-javascript
+#: code:addons/gate_financial_report/static/src/xml/partner_ledger_view.xml:0
+#, python-format
+msgid "Apply"
+msgstr "تنفيذ"
+
+#. module: gate_financial_report
+#: model:ir.model.fields,field_description:gate_financial_report.field_account_partner_ledger__availability_condition
+msgid "Availability"
+msgstr ""
+
+#. module: gate_financial_report
+#. odoo-javascript
+#: code:addons/gate_financial_report/static/src/xml/partner_ledger_view.xml:0
+#: code:addons/gate_financial_report/static/src/xml/partner_ledger_view.xml:0
+#: model_terms:ir.ui.view,arch_db:gate_financial_report.partner_ledger
+#, python-format
+msgid "Balance"
+msgstr "الرصيد"
+
+#. module: gate_financial_report
+#. odoo-javascript
+#: code:addons/gate_financial_report/static/src/xml/partner_ledger_view.xml:0
+#: code:addons/gate_financial_report/static/src/xml/partner_ledger_view.xml:0
+#, python-format
+msgid "Calendar"
+msgstr "تقويم"
+
+#. module: gate_financial_report
+#: model_terms:ir.ui.view,arch_db:gate_financial_report.account_common_report_view
+msgid "Cancel"
+msgstr ""
+
+#. module: gate_financial_report
+#: model:ir.model.fields,field_description:gate_financial_report.field_account_partner_ledger__chart_template_id
+msgid "Chart of Accounts"
+msgstr ""
+
+#. module: gate_financial_report
+#: model:ir.model.fields,field_description:gate_financial_report.field_account_partner_ledger__column_ids
+msgid "Columns"
+msgstr ""
+
+#. module: gate_financial_report
+#: model:ir.model.fields,field_description:gate_financial_report.field_account_partner_ledger__company_id
+msgid "Company"
+msgstr "شركة"
+
+#. module: gate_financial_report
+#: model:ir.model.fields,field_description:gate_financial_report.field_account_partner_ledger__country_id
+msgid "Country"
+msgstr ""
+
+#. module: gate_financial_report
+#: model:ir.model.fields,field_description:gate_financial_report.field_account_partner_ledger__create_uid
+msgid "Created by"
+msgstr "انشأ من قبل"
+
+#. module: gate_financial_report
+#: model:ir.model.fields,field_description:gate_financial_report.field_account_partner_ledger__create_date
+msgid "Created on"
+msgstr "تم إنشاؤها على"
+
+#. module: gate_financial_report
+#. odoo-javascript
+#: code:addons/gate_financial_report/static/src/xml/partner_ledger_view.xml:0
+#: code:addons/gate_financial_report/static/src/xml/partner_ledger_view.xml:0
+#: model_terms:ir.ui.view,arch_db:gate_financial_report.partner_ledger
+#, python-format
+msgid "Credit"
+msgstr "دائن"
+
+#. module: gate_financial_report
+#. odoo-javascript
+#: code:addons/gate_financial_report/static/src/xml/partner_ledger_view.xml:0
+#: model_terms:ir.ui.view,arch_db:gate_financial_report.partner_ledger
+#, python-format
+msgid "Date"
+msgstr "التاريخ"
+
+#. module: gate_financial_report
+#. odoo-javascript
+#: code:addons/gate_financial_report/static/src/xml/partner_ledger_view.xml:0
+#: model:ir.model.fields,field_description:gate_financial_report.field_account_partner_ledger__filter_date_range
+#, python-format
+msgid "Date Range"
+msgstr "الفتره من:الي"
+
+#. module: gate_financial_report
+#. odoo-javascript
+#: code:addons/gate_financial_report/static/src/xml/partner_ledger_view.xml:0
+#: code:addons/gate_financial_report/static/src/xml/partner_ledger_view.xml:0
+#, python-format
+msgid "Dates"
+msgstr "بلح"
+
+#. module: gate_financial_report
+#. odoo-javascript
+#: code:addons/gate_financial_report/static/src/xml/partner_ledger_view.xml:0
+#: code:addons/gate_financial_report/static/src/xml/partner_ledger_view.xml:0
+#: model_terms:ir.ui.view,arch_db:gate_financial_report.partner_ledger
+#, python-format
+msgid "Debit"
+msgstr "مدين"
+
+#. module: gate_financial_report
+#: model:ir.model.fields,field_description:gate_financial_report.field_account_partner_ledger__default_opening_date_filter
+msgid "Default Opening"
+msgstr ""
+
+#. module: gate_financial_report
+#: model:ir.model.fields,field_description:gate_financial_report.field_account_partner_ledger__display_account
+msgid "Display Accounts"
+msgstr "عرض الحسابات"
+
+#. module: gate_financial_report
+#: model:ir.model.fields,field_description:gate_financial_report.field_account_partner_ledger__display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: gate_financial_report
+#: model:ir.model.fields,field_description:gate_financial_report.field_account_partner_ledger__filter_show_draft
+msgid "Draft Entries"
+msgstr ""
+
+#. module: gate_financial_report
+#: model:ir.model.fields,field_description:gate_financial_report.field_account_partner_ledger__date_to
+msgid "End Date"
+msgstr "تاريخ الانتهاء"
+
+#. module: gate_financial_report
+#. odoo-javascript
+#: code:addons/gate_financial_report/static/src/xml/partner_ledger_view.xml:0
+#, python-format
+msgid "End Date :"
+msgstr "تاريخ الانتهاء :"
+
+#. module: gate_financial_report
+#. odoo-javascript
+#: code:addons/gate_financial_report/static/src/xml/partner_ledger_view.xml:0
+#: model_terms:ir.ui.view,arch_db:gate_financial_report.partner_ledger
+#, python-format
+msgid "Entry Label"
+msgstr "الوصف"
+
+#. module: gate_financial_report
+#. odoo-javascript
+#: code:addons/gate_financial_report/static/src/xml/partner_ledger_view.xml:0
+#, python-format
+msgid "Export (XLSX)"
+msgstr "تصدير (XLSX)"
+
+#. module: gate_financial_report
+#: model:ir.model.fields,field_description:gate_financial_report.field_account_partner_ledger__filter_fiscal_position
+msgid "Filter Multivat"
+msgstr ""
+
+#. module: gate_financial_report
+#: model:ir.model.fields,field_description:gate_financial_report.field_account_partner_ledger__filter_growth_comparison
+msgid "Growth Comparison"
+msgstr ""
+
+#. module: gate_financial_report
+#: model:ir.model.fields,field_description:gate_financial_report.field_account_partner_ledger__id
+msgid "ID"
+msgstr "بطاقة تعريف"
+
+#. module: gate_financial_report
+#: model:ir.model.fields,help:gate_financial_report.field_account_partner_ledger__amount_currency
+msgid ""
+"It adds the currency column on report if the currency differs from the "
+"company currency."
+msgstr ""
+
+#. module: gate_financial_report
+#. odoo-javascript
+#: code:addons/gate_financial_report/static/src/xml/partner_ledger_view.xml:0
+#, python-format
+msgid "JRNL"
+msgstr "نوع اليوميه"
+
+#. module: gate_financial_report
+#: model_terms:ir.ui.view,arch_db:gate_financial_report.partner_ledger
+msgid "Journal"
+msgstr "نوع اليوميه"
+
+#. module: gate_financial_report
+#: model:ir.model,name:gate_financial_report.model_account_move_line
+msgid "Journal Item"
+msgstr ""
+
+#. module: gate_financial_report
+#: model:ir.model.fields,field_description:gate_financial_report.field_account_partner_ledger__filter_journals
+#: model:ir.model.fields,field_description:gate_financial_report.field_account_partner_ledger__journal_ids
+msgid "Journals"
+msgstr "اليوميات"
+
+#. module: gate_financial_report
+#. odoo-javascript
+#: code:addons/gate_financial_report/static/src/xml/partner_ledger_view.xml:0
+#, python-format
+msgid "Journals:"
+msgstr "اليوميات:"
+
+#. module: gate_financial_report
+#: model:ir.model.fields,field_description:gate_financial_report.field_account_partner_ledger____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: gate_financial_report
+#: model:ir.model.fields,field_description:gate_financial_report.field_account_partner_ledger__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: gate_financial_report
+#: model:ir.model.fields,field_description:gate_financial_report.field_account_partner_ledger__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: gate_financial_report
+#: model:ir.model.fields,field_description:gate_financial_report.field_account_partner_ledger__line_ids
+msgid "Lines"
+msgstr ""
+
+#. module: gate_financial_report
+#: model:ir.model.fields,field_description:gate_financial_report.field_account_partner_ledger__load_more_limit
+msgid "Load More Limit"
+msgstr ""
+
+#. module: gate_financial_report
+#. odoo-javascript
+#: code:addons/gate_financial_report/static/src/xml/partner_ledger_view.xml:0
+#: model_terms:ir.ui.view,arch_db:gate_financial_report.partner_ledger
+#, python-format
+msgid "Move"
+msgstr "الحركه"
+
+#. module: gate_financial_report
+#: model:ir.model.fields,field_description:gate_financial_report.field_account_partner_ledger__filter_multi_company
+msgid "Multi-Company"
+msgstr ""
+
+#. module: gate_financial_report
+#: model:ir.model.fields,field_description:gate_financial_report.field_account_partner_ledger__name
+msgid "Name"
+msgstr ""
+
+#. module: gate_financial_report
+#. odoo-python
+#: code:addons/gate_financial_report/wizard/partner_leadger.py:0
+#, python-format
+msgid "No Accounts Found! Please Add One"
+msgstr "لا توجد حسابات! الرجاء إضافة واحد"
+
+#. module: gate_financial_report
+#: model:ir.model.fields,field_description:gate_financial_report.field_account_partner_ledger__only_tax_exigible
+msgid "Only Tax Exigible Lines"
+msgstr ""
+
+#. module: gate_financial_report
+#. odoo-javascript
+#: code:addons/gate_financial_report/static/src/xml/partner_ledger_view.xml:0
+#: model:ir.model.fields,field_description:gate_financial_report.field_account_partner_ledger__partner_ids
+#, python-format
+msgid "Partner"
+msgstr "شريك"
+
+#. module: gate_financial_report
+#. odoo-javascript
+#: code:addons/gate_financial_report/static/src/xml/partner_ledger_view.xml:0
+#: model:ir.actions.act_window,name:gate_financial_report.action_partner_leadger
+#: model:ir.actions.client,name:gate_financial_report.action_partner_ledger
+#: model:ir.ui.menu,name:gate_financial_report.menu_partner_leadger
+#: model:ir.ui.menu,name:gate_financial_report.menu_partner_ledger
+#, python-format
+msgid "Partner Ledger"
+msgstr "كشف الحساب"
+
+#. module: gate_financial_report
+#: model:ir.ui.menu,name:gate_financial_report.account_reports_partner
+msgid "Partner Reports"
+msgstr ""
+
+#. module: gate_financial_report
+#: model:ir.actions.report,name:gate_financial_report.action_print_partner_ledger
+msgid "Partner ledger"
+msgstr ""
+
+#. module: gate_financial_report
+#. odoo-javascript
+#: code:addons/gate_financial_report/static/src/xml/partner_ledger_view.xml:0
+#, python-format
+msgid "Partner tag:"
+msgstr "علامة الشريك:"
+
+#. module: gate_financial_report
+#: model:ir.model.fields,field_description:gate_financial_report.field_account_partner_ledger__partner_category_ids
+msgid "Partner tags"
+msgstr "علامات الشريك"
+
+#. module: gate_financial_report
+#: model:ir.model.fields,field_description:gate_financial_report.field_account_partner_ledger__result_selection
+msgid "Partner's"
+msgstr ""
+
+#. module: gate_financial_report
+#: model:ir.model.fields,field_description:gate_financial_report.field_account_partner_ledger__filter_partner
+msgid "Partners"
+msgstr ""
+
+#. module: gate_financial_report
+#. odoo-javascript
+#: code:addons/gate_financial_report/static/src/xml/partner_ledger_view.xml:0
+#, python-format
+msgid "Partners:"
+msgstr "الشركاء:"
+
+#. module: gate_financial_report
+#. odoo-javascript
+#: code:addons/gate_financial_report/static/src/xml/partner_ledger_view.xml:0
+#: model:ir.model.fields.selection,name:gate_financial_report.selection__account_partner_ledger__account_type__liability_payable
+#, python-format
+msgid "Payable"
+msgstr "دائن"
+
+#. module: gate_financial_report
+#: model:ir.model.fields.selection,name:gate_financial_report.selection__account_partner_ledger__result_selection__supplier
+msgid "Payable Accounts"
+msgstr ""
+
+#. module: gate_financial_report
+#: model:ir.model.fields,field_description:gate_financial_report.field_account_partner_ledger__filter_period_comparison
+msgid "Period Comparison"
+msgstr ""
+
+#. module: gate_financial_report
+#. odoo-javascript
+#: code:addons/gate_financial_report/static/src/xml/partner_ledger_view.xml:0
+#, python-format
+msgid "Posted"
+msgstr ""
+
+#. module: gate_financial_report
+#. odoo-javascript
+#: code:addons/gate_financial_report/static/src/xml/partner_ledger_view.xml:0
+#, python-format
+msgid "Posted Entries"
+msgstr "إدخالات منشورة"
+
+#. module: gate_financial_report
+#: model_terms:ir.ui.view,arch_db:gate_financial_report.account_common_report_view
+msgid "Print"
+msgstr ""
+
+#. module: gate_financial_report
+#. odoo-javascript
+#: code:addons/gate_financial_report/static/src/xml/partner_ledger_view.xml:0
+#, python-format
+msgid "Print (PDF)"
+msgstr "طباعة (PDF)"
+
+#. module: gate_financial_report
+#. odoo-javascript
+#: code:addons/gate_financial_report/static/src/xml/partner_ledger_view.xml:0
+#: model:ir.model.fields.selection,name:gate_financial_report.selection__account_partner_ledger__account_type__asset_receivable
+#, python-format
+msgid "Receivable"
+msgstr "مدين"
+
+#. module: gate_financial_report
+#: model:ir.model.fields.selection,name:gate_financial_report.selection__account_partner_ledger__result_selection__customer
+msgid "Receivable Accounts"
+msgstr "حساب المدين"
+
+#. module: gate_financial_report
+#: model:ir.model.fields.selection,name:gate_financial_report.selection__account_partner_ledger__result_selection__customer_supplier
+msgid "Receivable and Payable Accounts"
+msgstr "دائن ومدين"
+
+#. module: gate_financial_report
+#: model:ir.model.fields,field_description:gate_financial_report.field_account_partner_ledger__reconciled
+msgid "Reconcile Type"
+msgstr "نوع التوفيق"
+
+#. module: gate_financial_report
+#. odoo-javascript
+#: code:addons/gate_financial_report/static/src/xml/partner_ledger_view.xml:0
+#, python-format
+msgid "Reconciled status:"
+msgstr ""
+
+#. module: gate_financial_report
+#: model_terms:ir.ui.view,arch_db:gate_financial_report.view_account_financial_report_form
+msgid "Report"
+msgstr ""
+
+#. module: gate_financial_report
+#: model_terms:ir.ui.view,arch_db:gate_financial_report.account_common_report_view
+msgid "Report Options"
+msgstr ""
+
+#. module: gate_financial_report
+#: model:ir.model.fields,field_description:gate_financial_report.field_account_partner_ledger__root_report_id
+msgid "Root Report"
+msgstr ""
+
+#. module: gate_financial_report
+#: model:ir.model.fields,field_description:gate_financial_report.field_account_partner_ledger__search_bar
+msgid "Search Bar"
+msgstr ""
+
+#. module: gate_financial_report
+#: model:ir.model.fields,field_description:gate_financial_report.field_account_partner_ledger__date_from
+msgid "Start Date"
+msgstr "تاريخ البدء"
+
+#. module: gate_financial_report
+#. odoo-javascript
+#: code:addons/gate_financial_report/static/src/xml/partner_ledger_view.xml:0
+#, python-format
+msgid "Start Date :"
+msgstr "تاريخ البدء :"
+
+#. module: gate_financial_report
+#. odoo-javascript
+#: code:addons/gate_financial_report/static/src/xml/partner_ledger_view.xml:0
+#, python-format
+msgid "Target Move:"
+msgstr "نقل الهدف:"
+
+#. module: gate_financial_report
+#: model:ir.model.fields,field_description:gate_financial_report.field_account_partner_ledger__target_move
+msgid "Target Moves"
+msgstr "الحركات الهدف"
+
+#. module: gate_financial_report
+#: model:ir.model.fields,help:gate_financial_report.field_account_partner_ledger__root_report_id
+msgid "The report this report is a variant of."
+msgstr ""
+
+#. module: gate_financial_report
+#: model:ir.model.fields,field_description:gate_financial_report.field_account_partner_ledger__filter_unfold_all
+msgid "Unfold All"
+msgstr ""
+
+#. module: gate_financial_report
+#. odoo-javascript
+#: code:addons/gate_financial_report/static/src/xml/partner_ledger_view.xml:0
+#: code:addons/gate_financial_report/static/src/xml/partner_ledger_view.xml:0
+#, python-format
+msgid "Unfolded"
+msgstr "تكشفت"
+
+#. module: gate_financial_report
+#. odoo-javascript
+#: code:addons/gate_financial_report/static/src/xml/partner_ledger_view.xml:0
+#, python-format
+msgid "Unreconciled"
+msgstr ""
+
+#. module: gate_financial_report
+#: model:ir.model.fields,field_description:gate_financial_report.field_account_partner_ledger__filter_unreconciled
+msgid "Unreconciled Entries"
+msgstr ""
+
+#. module: gate_financial_report
+#: model:ir.model.fields.selection,name:gate_financial_report.selection__account_partner_ledger__reconciled__unreconciled
+msgid "Unreconciled Only"
+msgstr "غير المصالحة فقط"
+
+#. module: gate_financial_report
+#: model:ir.model.fields,field_description:gate_financial_report.field_account_partner_ledger__variant_report_ids
+msgid "Variants"
+msgstr ""
+
+#. module: gate_financial_report
+#. odoo-javascript
+#: code:addons/gate_financial_report/static/src/xml/partner_ledger_view.xml:0
+#, python-format
+msgid "View Source move"
+msgstr "عرض نقل المصدر"
+
+#. module: gate_financial_report
+#: model:ir.model.fields,field_description:gate_financial_report.field_account_partner_ledger__amount_currency
+msgid "With Currency"
+msgstr ""
+
+#. module: gate_financial_report
+#: model:ir.model.fields.selection,name:gate_financial_report.selection__account_partner_ledger__display_account__not_zero
+msgid "With balance is not equal to 0"
+msgstr "مع رصيد لا يساوي 0"
+
+#. module: gate_financial_report
+#: model:ir.model.fields.selection,name:gate_financial_report.selection__account_partner_ledger__display_account__movement
+msgid "With movements"
+msgstr "مع الحركات"
+
+#. module: gate_financial_report
+#: model:ir.model,name:gate_financial_report.model_account_partner_ledger
+msgid "account.partner.ledger"
+msgstr ""
+
+#. module: gate_financial_report
+#. odoo-javascript
+#: code:addons/gate_financial_report/static/src/xml/partner_ledger_view.xml:0
+#: code:addons/gate_financial_report/static/src/xml/partner_ledger_view.xml:0
+#, python-format
+msgid "all"
+msgstr ""
+
+#. module: gate_financial_report
+#. odoo-javascript
+#: code:addons/gate_financial_report/static/src/xml/partner_ledger_view.xml:0
+#, python-format
+msgid "asset_receivable"
+msgstr ""
+
+#. module: gate_financial_report
+#. odoo-javascript
+#: code:addons/gate_financial_report/static/src/xml/partner_ledger_view.xml:0
+#, python-format
+msgid "liability_payable"
+msgstr ""
+
+#. module: gate_financial_report
+#: model:ir.model,name:gate_financial_report.model_report_gate_financial_report_partner_ledger
+msgid "report.gate_financial_report.partner_ledger"
+msgstr ""
+
+#. module: gate_financial_report
+#. odoo-javascript
+#: code:addons/gate_financial_report/static/src/xml/partner_ledger_view.xml:0
+#, python-format
+msgid "unreconciled"
+msgstr ""
