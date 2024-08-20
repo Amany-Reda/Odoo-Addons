@@ -1,0 +1,58 @@
+<odoo>
+    <data>
+
+        <!--  QWeb Reports  -->
+        <record id="action_report_partner_aged" model="ir.actions.report">
+            <field name="name">Aged Partner</field>
+            <field name="model">res.partner</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">qataria_mod.partner_aged</field>
+            <field name="report_file">qataria_mod.partner_aged</field>
+            <field name="binding_model_id" ref="account.model_account_move"/>
+            <field name="binding_type">report</field>
+        </record>
+
+        <template id="partner_aged">
+            <t t-call="web.html_container">
+                <t t-set="data_report_margin_top" t-value="30"/>
+                <t t-set="data_report_header_spacing" t-value="20"/>
+                <t t-set="data_report_dpi" t-value="110"/>
+                <t t-call="web.internal_layout">
+                    <div class="page" style="direction:rtl;font-size:20px;">
+                        <h1>Aged Partner</h1>
+                        <div class="col-6">
+                            <p style="font-weight:bold;font-size:25px;">
+                                <span t-if="data['result_selection'] == 'customer'">Receivable Accounts</span>
+                                <span t-if="data['result_selection'] == 'supplier'">Payable Accounts</span>
+                                <span t-if="data['result_selection'] == 'customer_supplier'">Receivable and Payable Accounts</span>
+                            </p>
+                        </div>
+                        <table class="table table-sm table-reports">
+                            <thead>
+                                <tr>
+                                    <th>Partners</th>
+                                    <th>Total</th>
+                                </tr>
+                                <tr t-if="get_partner_lines">
+                                    <th>Account Total</th>
+                                    <th style="text-align:center;"><span t-esc="get_direction[5]" t-options="{'widget': 'monetary', 'display_currency': res_company.currency_id}"/></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr t-foreach="get_partner_lines" t-as="partner">
+                                    <td style="text-align:center;">
+                                        <span t-esc="partner['name']"/>
+                                    </td>
+                                    <td style="text-align:center;">
+                                        <span t-esc="partner['total']" t-options="{'widget': 'monetary', 'display_currency': res_company.currency_id}"/>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </t>
+            </t>
+        </template>
+
+    </data>
+</odoo>
