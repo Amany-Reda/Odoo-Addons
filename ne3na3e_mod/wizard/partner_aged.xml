@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="account_aged_balance_view_inherit" model="ir.ui.view">
+        <field name="name">Aged Partner</field>
+        <field name="model">account.aged.trial.balance</field>
+        <field name="inherit_id" ref="accounting_pdf_reports.account_aged_balance_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='date_from']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//field[@name='period_length']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//field[@name='target_move']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//button[@name='check_report']" position="after">
+                <button name="check_report_partner_aged" string="Print Without Details" type="object" default_focus="1" class="oe_highlight" data-hotkey="q"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
