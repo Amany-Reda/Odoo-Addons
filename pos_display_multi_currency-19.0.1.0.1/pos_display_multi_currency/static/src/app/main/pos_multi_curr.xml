@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 2016-Present Webkul Software Pvt. Ltd. (<https://webkul.com/>) -->
+<!-- See LICENSE file for full copyright and licensing details. -->
+<!-- License URL : <https://store.webkul.com/license.html/> -->
+<templates id="template" xml:space="preserve">
+    <t t-name="pos_display_multi_currency.WKMultiCurrButton" t-inherit="point_of_sale.ControlButtons" t-inherit-mode="extension">
+        <xpath expr="//InternalNoteButton" position="after">
+            <button class="control-button o_fiscal_position_button btn btn-light rounded-0 fw-bolder" id="wk_display_multi_curr" t-on-click="multi_currency" t-if="pos.config.enable_display_multi_curr">
+                Multi Currencies(<t t-esc="currentCurrencyName"/>)
+            </button>
+        </xpath>
+    </t>
+    <t t-name="ProductCard" t-inherit="point_of_sale.ProductCard" t-inherit-mode="extension" >
+        <xpath expr="//div[hasclass('product-content')]" position="before">
+            <span t-if="props.product.list_price" class="price-tag text-primary pt-1 ms-2 fw-bolder">
+                <t t-esc="env.utils.formatCurrency(props.product.list_price)" />
+                <t t-if="this.env.services.pos.config.enable_display_multi_curr and this.env.services.pos.config.show_currency_on_product">
+                    /
+                    <span class="wk_display_curr" style="font-size:12px;" t-esc="getWkFormattedUnitPrice"/>
+                </t>
+            </span>
+        </xpath>
+    </t>
+    <t t-name="Orderline" t-inherit="point_of_sale.Orderline" t-inherit-mode="extension" >
+        <xpath expr="//div[hasclass('product-price')]" position="after">
+            <t t-if="this.env.services.pos.config.enable_display_multi_curr and this.env.services.pos.config.show_currency_on_orderline">
+                        /
+                <span class="wk_display_curr">
+                    <t t-esc="this.env.services.pos.wk_format_currency(line.displayPrice)"/>
+                </span>
+            </t>
+        </xpath>
+    </t>
+
+    <t t-name="OrderSummary" t-inherit="point_of_sale.OrderSummary" t-inherit-mode="extension" >
+        <xpath expr="//OrderDisplay" position="attributes">
+            <attribute name="Wk_tatal">env.services.pos.wk_format_currency(currentOrder.priceIncl)</attribute>
+            <attribute name="Wk_tax">!env.services.pos.wk_floatIsZero(currentOrder.amountTaxes) and env.services.pos.wk_format_currency(currentOrder.amountTaxes) or ''</attribute>
+        </xpath>
+    </t>
+    <t t-name="TicketScreen" t-inherit="point_of_sale.TicketScreen" t-inherit-mode="extension" >
+        <xpath expr="//div[hasclass('leftpane')]//OrderDisplay" position="attributes">
+            <attribute name="Wk_tatal">env.services.pos.wk_format_currency(_selectedSyncedOrder.priceIncl)</attribute>
+            <attribute name="Wk_tax">!env.services.pos.wk_floatIsZero(_selectedSyncedOrder.amountTaxes) and env.services.pos.wk_format_currency(_selectedSyncedOrder.amountTaxes) or ''</attribute>
+        </xpath>
+    </t>
+
+    <t t-name="OrderDisplay" t-inherit="point_of_sale.OrderDisplay" t-inherit-mode="extension" >
+        <xpath expr="//div[hasclass('order-summary')]" position="replace">
+            <div t-if="props.total or props.tax" class="order-summary d-flex flex-column gap-1 px-3 py-2 border-top fw-bolder lh-sm">
+                <div t-if="props.tax" class="tax-info subentry d-flex justify-content-between w-100 fs-6 text-muted ">
+                        Taxes
+                    <div id="order-widget-taxes">
+                        <span t-esc="props.tax" class="tax"/>
+                        <t t-if= "this.env.services.pos.config.enable_display_multi_curr and this.env.services.pos.config.show_currency_on_total and props.Wk_tax">
+               /                            <span class="wk_display_curr">
+                                <t t-esc="props.Wk_tax"/>
+                            </span>
+                        </t>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between w-100 fs-2">
+                        Total
+                    <div>
+                        <span t-esc="props.total" class="total"/>
+                        <t t-if= "this.env.services.pos.config.enable_display_multi_curr and this.env.services.pos.config.show_currency_on_total and props.Wk_tatal">
+                   /        <span class="wk_display_curr">
+                                <t t-esc="props.Wk_tatal"/>
+                            </span>
+                        </t>
+                    </div>
+                </div>
+            </div>
+          
+        </xpath>
+    </t>
+
+    <t t-name="PaymentScreenPaymentLines" t-inherit="point_of_sale.PaymentScreenPaymentLines" t-inherit-mode="extension" >
+        <xpath expr="//PriceFormatter[1]" position="after">
+            <t t-if="this.env.services.pos.config.enable_display_multi_curr and pos.config.show_currency_on_payment_lines and wkformatLineAmount(line)">
+                        /                <span class="wk_display_curr">
+                    <t t-esc="wkformatLineAmount(line)" />
+                </span>
+            </t>
+        </xpath>
+        <xpath expr="//div[hasclass('paymentline')]//div[hasclass('payment-amount')]//PriceFormatter" position="after">
+            <t t-if="this.env.services.pos.config.enable_display_multi_curr and pos.config.show_currency_on_payment_lines and wkformatLineAmount(line)">
+                        /                <span class="wk_display_curr">
+                    <t t-esc="wkformatLineAmount(line)" />
+                </span>
+            </t>
+        </xpath>
+    </t>
+    <t t-name="PaymentScreenDue" t-inherit="point_of_sale.PaymentScreenDue" t-inherit-mode="extension" >
+        <xpath expr="//div[hasclass('total')]" position="replace">
+            <div class="total text-center py-2 py-lg-4 text-success">
+                <t t-esc="this.env.utils.formatCurrency(currentOrder.totalDue)" />
+                <t t-if="this.env.services.pos.config.enable_display_multi_curr and this.env.services.pos.config.show_currency_on_payment_status">
+                /    <span class="wk_display_curr fw-bold fs-1">
+                        <t t-esc="this.env.services.pos.wk_format_currency(currentOrder.totalDue)" />
+                    </span>
+                </t>
+            </div>
+        </xpath>
+    </t>
+    <t t-name="PaymentScreenStatus" t-inherit="point_of_sale.PaymentScreenStatus" t-inherit-mode="extension" >
+        <xpath expr="//div[hasclass('payment-status-container')]//PriceFormatter[@price='amountText']" position="after">
+            <t t-if="this.env.services.pos.config.enable_display_multi_curr and this.env.services.pos.config.show_currency_on_payment_status and wkremainingText">
+                <span class="wk_display_curr fs-4" >
+                    <t t-if="this.env.services.pos.getOrder().remainingDue">
+                        / <t t-esc="wkremainingText" />
+                    </t>
+                    <t t-if="this.env.services.pos.getOrder().change">
+                        / <t t-esc="wkchangeText" />
+                    </t>
+                </span>
+            </t>
+        </xpath>
+    </t>
+  
+    <t t-name="pos_display_multi_currency.WkDisplaycCurrmultiPopup" >
+        <Dialog size="'md'" title="'Select Currency'">
+            <t t-set-slot="header">
+                <div class="d-flex flex-grow-1 justify-content-between">
+                    <h2 class="align-middle my-1">Select the secondary currency</h2>
+                </div>
+            </t>
+            <main class="modal-body">
+                <div class="curr_list">
+                    <label for="Currencies">Currencies:</label>
+                    <select name="Currencies" id="wk_currencies">
+                        <t t-if="pos.wk_display_curr_ids">
+                            <t t-foreach="pos.wk_display_curr_ids" t-as="currency" t-key="currency.id">
+                                <t t-if="currency.id !== pos?.company_currency?.id">
+                                    <option t-if="currency.id==props.selected_currency.id" selected="selected" t-att-value="currency.name" t-att-id = "currency.id">
+                                        <t t-esc="currency.name" />
+                                    </option>
+                                    <option t-else="" t-att-value="currency.name" t-att-id = "currency.id">
+                                        <t t-esc="currency.name" />
+                                    </option>
+                                </t>
+                            </t>
+                        </t>
+                    </select>
+                </div>
+            </main>
+            <t t-set-slot="footer">
+                <div class="d-flex w-100 justify-content-start gap-2">
+                    <button class="button confirm btn btn-lg btn-primary" t-on-click="wk_change_currency">
+                        Apply
+                    </button>
+                    <button class="button cancel btn btn-lg btn-secondary" t-on-click="props.close">
+                       Cancel
+                    </button>
+                </div>
+            </t>
+        </Dialog>
+    </t>
+
+    <t t-name="OrderReceipt" t-inherit="point_of_sale.OrderReceipt" t-inherit-mode="extension">
+        <xpath expr="//div[hasclass('receipt-total')]" position="replace">
+            <t t-if="order and order.config_id and order.config_id.enable_display_multi_curr">
+                <div class="pos-receipt-amount receipt-total fw-bolder">
+                    <span class="label-total">Total</span>
+                    <span t-out="formatCurrency(order.priceIncl)" class="pos-receipt-right-align font-monospace"/>
+                </div>
+            </t>
+            <t t-else="">
+                <div class="pos-receipt-amount receipt-total fw-bolder">
+                    <span class="label-total">Total</span>
+                    <span t-out="order.currencyDisplayPriceIncl" class="pos-receipt-right-align font-monospace"/>
+                </div>
+            </t>
+        </xpath>
+    </t>
+</templates>

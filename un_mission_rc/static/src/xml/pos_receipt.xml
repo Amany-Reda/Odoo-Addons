@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-inherit="point_of_sale.OrderReceipt" t-inherit-mode="extension">
+        <xpath expr="//div[hasclass('before-footer')]" position="after">
+            <t t-set="mission_data" t-value="props.order._un_mission_receipt_data"/>
+            <t t-if="mission_data">
+                <div class="pos-receipt-section" style="margin-top: 10px; text-align: center; font-size: 13px;">
+                    <div style="border-top: 1px dotted #000; margin: 6px 0 4px 0;"></div>
+
+                    <div style="font-weight: 500; letter-spacing: 1px; margin-bottom: 4px;">
+                        RATION LIMITS
+                    </div>
+
+                    <div style="border-top: 1px dotted #000; margin: 4px 0 8px 0;"></div>
+
+                    <t t-foreach="mission_data.lines" t-as="line" t-key="line.category_id">
+                        <div style="margin: 6px 0; text-align: center;">
+                            <span style="font-weight:bold;" t-esc="line.category_name"/>:
+                            <span t-esc="line.display_value"/>
+                        </div>
+                    </t>
+                </div>
+            </t>
+        </xpath>
+    </t>
+</templates>

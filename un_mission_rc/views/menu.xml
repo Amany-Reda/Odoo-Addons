@@ -1,0 +1,17 @@
+<odoo>
+
+    <menuitem
+        id="menu_rc_category"
+        name="RC Category"
+        parent="sale.menu_sale_config"
+        action="action_rc_category"
+        sequence="30"/>
+
+    <menuitem
+        id="menu_un_mission"
+        name="UN Missions"
+        parent="sale.menu_sale_config"
+        action="action_un_mission"
+        sequence="31"/>
+
+</odoo>

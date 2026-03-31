@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_rc_category,rc.category,model_rc_category,base.group_user,1,1,1,1
+access_un_mission,un.mission,model_un_mission,base.group_user,1,1,1,1
+access_un_mission_line,un.mission.line,model_un_mission_line,base.group_user,1,1,1,1
+
